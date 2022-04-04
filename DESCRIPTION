@@ -1,6 +1,6 @@
 Package: FlexDotPlot
 Title: Flexible Dot Plot
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     person(given = "Simon",
            family = "Leonard",
@@ -22,8 +22,8 @@ VignetteBuilder: knitr
 URL: https://github.com/Simon-Leonard/FlexDotPlot
 BugReports: https://github.com/Simon-Leonard/FlexDotPlot/issues
 NeedsCompilation: no
-Packaged: 2022-02-04 14:43:17 UTC; sleonard
+Packaged: 2022-04-04 10:59:08 UTC; sleonard
 Author: Simon Leonard [aut, cre] (<https://orcid.org/0000-0002-6437-5800>)
 Maintainer: Simon Leonard <simon.leonard@univ-rennes1.fr>
 Repository: CRAN
-Date/Publication: 2022-02-07 11:50:09 UTC
+Date/Publication: 2022-04-04 11:50:09 UTC

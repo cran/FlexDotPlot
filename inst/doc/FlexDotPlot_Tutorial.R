@@ -51,7 +51,7 @@ dot_plot(data.to.plot = PBMC3K_example_data, col_var ="pval_symb", shape.scale=2
 dot_plot(data.to.plot = PBMC3K_example_data, col_var = "pct.exp", cols.use = c("yellow","blue"), shape.scale = 20)
 
 ## ----message=FALSE, warning=FALSE---------------------------------------------
-dot_plot(data.to.plot = PBMC3K_example_data, shape_var = "pct.exp", shape.scale = 8)
+dot_plot(data.to.plot = PBMC3K_example_data, shape_var = "pct.exp", shape.scale = 20)
 
 ## ---- eval=F------------------------------------------------------------------
 #  # Same results
@@ -73,9 +73,9 @@ dot_plot(data.to.plot = PBMC3K_example_data, text_var = "pct.exp2", text.size = 
 #  dot_plot(data.to.plot = PBMC3K_example_data, text_var = 4, , text.size = 3, shape.scale = 20)
 #  dot_plot(data.to.plot = PBMC3K_example_data, text_var = PBMC3K_example_data$pct.exp2, , text.size = 3, shape.scale = 20)
 
-## ----message=FALSE, warning=FALSE, fig.height= 4------------------------------
+## ----message=FALSE, warning=FALSE---------------------------------------------
 dot_plot(data.to.plot = PBMC3K_example_data, 
-         size_var = "pct.exp", shape.scale = 8,
+         size_var = "pct.exp", shape.scale = 25,
          shape_var= "pct.exp",
          col_var = "avg_logFC"
          )
@@ -88,7 +88,7 @@ dot_plot(data.to.plot = PBMC3K_example_data,
 
 ## ----message=FALSE, warning=FALSE---------------------------------------------
 dot_plot(data.to.plot = PBMC3K_example_data, 
-         size_var = "pct.exp", shape.scale = 8,
+         size_var = "pct.exp", shape.scale = 25,
          shape_var= "pct.exp",
          col_var = "avg_logFC",
          dend_x_var = c("pct.exp","avg_logFC"),
@@ -97,7 +97,7 @@ dot_plot(data.to.plot = PBMC3K_example_data,
 
 ## ----message=FALSE, warning=FALSE---------------------------------------------
 dot_plot(data.to.plot = PBMC3K_example_data, 
-         size_var = "pct.exp", shape.scale = 8,
+         size_var = "pct.exp", shape.scale = 25,
          shape_var= "pct.exp",
          col_var = "avg_logFC",
          dend_x_var = c("pct.exp","avg_logFC"),
@@ -151,7 +151,7 @@ dot_plot(data.to.plot = PBMC3K_example_data,
 
 ## ----message=FALSE, warning=FALSE---------------------------------------------
 dot_plot(data.to.plot = PBMC3K_example_data, 
-         size_var = "pct.exp", shape.scale = 8,
+         size_var = "pct.exp", shape.scale = 25,
          shape_var= "pct.exp",
          col_var = "avg_logFC",
          vertical_coloring=c(NA, "gray80")
@@ -188,7 +188,7 @@ dotplot = dot_plot(
   x.lab.pos="bottom",y.lab.pos="left", 
   cols.use=c("lightgrey","orange","red", "darkred"),size_legend="RNA", col_legend="ADT", shape_legend="Canonical marker ?", 
   shape.scale =12, text.size=3, 
-  plot.legend = TRUE,x.lab.rot = TRUE, 
+  plot.legend = TRUE, 
   size.breaks.number=4, color.breaks.number=4, shape.breaks.number=5
   , dend_x_var=c("RNA.avg.exp.scaled","ADT.avg.exp.scaled"), dend_y_var=c("RNA.avg.exp.scaled","ADT.avg.exp.scaled"), dist_method="euclidean",
   hclust_method="ward.D", do.return = TRUE)
